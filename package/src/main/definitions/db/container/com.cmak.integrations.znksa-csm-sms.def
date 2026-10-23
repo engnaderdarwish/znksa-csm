@@ -1,0 +1,105 @@
+begin container
+   name           : com.cmak.integrations.znksa-csm-sms
+   type           : 2
+   num-references : 19
+   timestamp      : 1789903616
+   owner          : com.cmak.integrations
+   last-changed   : ARSERVER
+   export-version : 12
+   object-prop    : 5\90019\2\10\90016\4\1\1\90002\4\35\com.cmak.integrations.znksa-csm-sms\90021\4\35\com.cmak.integrations.znksa-csm-sms\90015\2\4\
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32847
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 14
+   datatype       : 1
+   value          : 4\53\com.cmak.integrations.znksa-csm-sms:SMS Configuration\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32847
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 14
+   datatype       : 1
+   value          : 4\53\com.cmak.integrations.znksa-csm-sms:LBS Configuration\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32846
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 13
+   datatype       : 1
+   value          : 4\39\com.cmak.integrations.znksa-csm-sms:LBS\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\52\com.cmak.integrations.znksa-csm-sms:BMC Modern Shell\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32846
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 13
+   datatype       : 1
+   value          : 4\51\com.cmak.integrations.znksa-csm-sms:Test Connection\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32846
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 13
+   datatype       : 1
+   value          : 4\55\com.cmak.integrations.znksa-csm-sms:Test LBS Connection\
+}
+end

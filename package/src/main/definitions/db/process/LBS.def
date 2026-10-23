@@ -1,0 +1,103 @@
+begin process definition
+   name           : com.cmak.integrations.znksa-csm-sms:LBS
+   definition     : {
+   definition     :   "version" : null,
+   definition     :   "lastUpdateTime" : 1789895567581,
+   definition     :   "lastChangedBy" : "ARSERVER",
+   definition     :   "owner" : "intg_team",
+   definition     :   "name" : "com.cmak.integrations.znksa-csm-sms:LBS",
+   definition     :   "tags" : null,
+   definition     :   "description" : "",
+   definition     :   "overlayGroupId" : "1",
+   definition     :   "scope" : "BUNDLE",
+   definition     :   "internal" : false,
+   definition     :   "guid" : "rx-bf51dfa7-8518-4f46-bab9-a7a174d1f7b6",
+   definition     :   "flowElements" : [ {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.SequenceFlowDefinition",
+   definition     :     "lastUpdateTime" : 1789895567581,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "Sequence Flow",
+   definition     :     "tags" : null,
+   definition     :     "description" : "",
+   definition     :     "overlayGroupId" : null,
+   definition     :     "internal" : false,
+   definition     :     "guid" : "rx-c5a9fd08-a95d-43cd-bb05-e5fba36027d5",
+   definition     :     "sourceNode" : "rx-0ca7924c-46f4-48cb-af58-838852e483d3",
+   definition     :     "targetNode" : "rx-9a88daeb-c67f-47c4-89ea-1dbbc74b7258",
+   definition     :     "condition" : ""
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.StartEventDefinition",
+   definition     :     "lastUpdateTime" : 1789895567581,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "Start",
+   definition     :     "tags" : null,
+   definition     :     "description" : "",
+   definition     :     "overlayGroupId" : null,
+   definition     :     "internal" : false,
+   definition     :     "guid" : "rx-0ca7924c-46f4-48cb-af58-838852e483d3"
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.EndEventDefinition",
+   definition     :     "lastUpdateTime" : 1789895567581,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "End",
+   definition     :     "tags" : null,
+   definition     :     "description" : "",
+   definition     :     "overlayGroupId" : null,
+   definition     :     "internal" : false,
+   definition     :     "guid" : "rx-b7eb4ebf-0469-4bc3-9b1d-16a2e414dde0",
+   definition     :     "event" : null
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.SequenceFlowDefinition",
+   definition     :     "lastUpdateTime" : 1789895567581,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "Sequence Flow",
+   definition     :     "tags" : null,
+   definition     :     "description" : "",
+   definition     :     "overlayGroupId" : null,
+   definition     :     "internal" : false,
+   definition     :     "guid" : "rx-2c75827c-edfc-4948-a675-a5e3994b86df",
+   definition     :     "sourceNode" : "rx-9a88daeb-c67f-47c4-89ea-1dbbc74b7258",
+   definition     :     "targetNode" : "rx-b7eb4ebf-0469-4bc3-9b1d-16a2e414dde0",
+   definition     :     "condition" : ""
+   definition     :   }, {
+   definition     :     "resourceType" : "com.bmc.arsys.rx.services.process.domain.ServiceTaskDefinition",
+   definition     :     "lastUpdateTime" : 1789895567581,
+   definition     :     "lastChangedBy" : "ARSERVER",
+   definition     :     "owner" : "ARSERVER",
+   definition     :     "name" : "LBS",
+   definition     :     "tags" : null,
+   definition     :     "description" : "",
+   definition     :     "overlayGroupId" : null,
+   definition     :     "internal" : false,
+   definition     :     "guid" : "rx-9a88daeb-c67f-47c4-89ea-1dbbc74b7258",
+   definition     :     "multiInstanceLoopDefinition" : null,
+   definition     :     "actionTypeName" : "com.cmak.integrations.znksa-csm-sms:locateSubscriber",
+   definition     :     "inputMap" : [ {
+   definition     :       "assignTarget" : "phoneNumber",
+   definition     :       "expression" : "\"592440728\""
+   definition     :     }, {
+   definition     :       "assignTarget" : "maxLocationAgeSeconds",
+   definition     :       "expression" : "\"3602\""
+   definition     :     } ],
+   definition     :     "outputMap" : [ ],
+   definition     :     "runAsUser" : null
+   definition     :   } ],
+   definition     :   "inputParams" : [ ],
+   definition     :   "outputParams" : [ ],
+   definition     :   "localVariables" : [ ],
+   definition     :   "contextKeyParam" : null,
+   definition     :   "isEnabled" : true,
+   definition     :   "permissions" : [ ],
+   definition     :   "layout" : "{\"cells\":[{\"id\":\"0ca7924c-46f4-48cb-af58-838852e483d3\",\"position\":{\"x\":50,\"y\":375},\"size\":{\"width\":30,\"height\":30},\"type\":\"rx.StartEvent\",\"z\":1,\"attrs\":{\".label\":{\"text\":\"\"}}},{\"id\":\"b7eb4ebf-0469-4bc3-9b1d-16a2e414dde0\",\"position\":{\"x\":900,\"y\":375},\"size\":{\"width\":30,\"height\":30},\"type\":\"rx.EndEvent\",\"z\":2,\"attrs\":{\".label\":{\"text\":\"\"}}},{\"content\":\"LBS\",\"id\":\"9a88daeb-c67f-47c4-89ea-1dbbc74b7258\",\"position\":{\"x\":200,\"y\":360},\"size\":{\"width\":90,\"height\":60},\"type\":\"rx.ProcessAction\",\"z\":6},{\"flowType\":\"normal\",\"id\":\"c5a9fd08-a95d-43cd-bb05-e5fba36027d5\",\"labels\":[{\"attrs\":{\"text\":{\"text\":\"\"}},\"position\":\"0.5\"}],\"source\":{\"id\":\"0ca7924c-46f4-48cb-af58-838852e483d3\"},\"target\":{\"id\":\"9a88daeb-c67f-47c4-89ea-1dbbc74b7258\"},\"type\":\"rx.SequenceFlow\",\"z\":7},{\"flowType\":\"normal\",\"id\":\"2c75827c-edfc-4948-a675-a5e3994b86df\",\"labels\":[{\"attrs\":{\"text\":{\"text\":\"\"}},\"position\":\"0.5\"}],\"source\":{\"id\":\"9a88daeb-c67f-47c4-89ea-1dbbc74b7258\"},\"target\":{\"id\":\"b7eb4ebf-0469-4bc3-9b1d-16a2e414dde0\"},\"type\":\"rx.SequenceFlow\",\"z\":8}]}",
+   definition     :   "artifacts" : [ ],
+   definition     :   "runAsUser" : false,
+   definition     :   "synchronous" : true,
+   definition     :   "overlayDescriptor" : null,
+   definition     :   "allowOverlay" : false,
+   definition     :   "localizableStrings" : null
+   definition     : }
+end

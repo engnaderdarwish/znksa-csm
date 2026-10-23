@@ -1,0 +1,6 @@
+#
+#Sun Sep 20 11:32:26 UTC 2026
+IgnoreRuleExecution=false
+DuplicateDataActionType=THROW_ERROR
+Name=AppLocalConfigStorage
+ImportOrder=null
